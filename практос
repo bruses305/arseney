@@ -1,0 +1,190 @@
+using System;
+
+namespace тест_комнота
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Имя первого учасника - ");
+            string i1 = Console.ReadLine();
+            int k1 = i1.Length;
+            int d = 0;
+            string i11 = "";
+            string c1;
+            while (d < k1-1)
+            {
+                c1 = i1[d].ToString();
+                i11 = i11 + "" + c1;
+                d += 1;
+            }
+            i11 = i11 + "" + "я";
+            if (i1[k1-1] == 'й')
+            {
+                Console.WriteLine($"Введите дату рождения {i11}");
+            }
+            else
+            {
+                Console.WriteLine($"Введите дату рождения {i1}а");
+            }
+            Console.Write("день рождения - ");
+            int date11 = int.Parse(Console.ReadLine());
+            Console.Write("месяц рождения - ");
+            int date12 = int.Parse(Console.ReadLine());
+            Console.Write("год рождения - ");
+            int date13 = int.Parse(Console.ReadLine());
+            Console.Write("Имя второго учасника - ");
+            string i2 = Console.ReadLine();
+            k1 = i2.Length;
+            d = 0;
+            i11 = "";
+            while (d < k1 - 1)
+            {
+                c1 = i2[d].ToString();
+                i11 = i11 + "" + c1;
+                d += 1;
+            }
+            i11 = i11 + "" + "я";
+            if (i2[k1 - 1] == 'й')
+            {
+                Console.WriteLine($"Введите дату рождения {i11}");
+            }
+            else
+            {
+                Console.WriteLine($"Введите дату рождения {i2}а");
+            }
+            Console.Write("день рождения - ");
+            int date21 = int.Parse(Console.ReadLine());
+            Console.Write("месяц рождения - ");
+            int date22 = int.Parse(Console.ReadLine());
+            Console.Write("год рождения - ");
+            int date23 = int.Parse(Console.ReadLine());
+            Console.Write("Имя третьего учасника - ");
+            string i3 = Console.ReadLine();
+            k1 = i3.Length;
+            d = 0;
+            i11 = "";
+            while (d < k1 - 1)
+            {
+                c1 = i3[d].ToString();
+                i11 = i11 + "" + c1;
+                d += 1;
+            }
+            i11 = i11 + "" + "я";
+            if (i3[k1 - 1] == 'й')
+            {
+                Console.WriteLine($"Введите дату рождения {i11}");
+            }
+            else
+            {
+                Console.WriteLine($"Введите дату рождения {i3}а");
+            }
+            Console.Write("день рождения - ");
+            int date31 = int.Parse(Console.ReadLine());
+            Console.Write("месяц рождения - ");
+            int date32 = int.Parse(Console.ReadLine());
+            Console.Write("год рождения - ");
+            int date33 = int.Parse(Console.ReadLine());
+            Console.Write("Имя четвертого учасника - ");
+            string i4 = Console.ReadLine();
+            k1 = i4.Length;
+            d = 0;
+            i11 = "";
+            while (d < k1 - 1)
+            {
+                c1 = i4[d].ToString();
+                i11 = i11 + "" + c1;
+                d += 1;
+            }
+            i11 = i11 + "" + "я";
+            if (i4[k1 - 1] == 'й')
+            {
+                Console.WriteLine($"Введите дату рождения {i11}");
+            }
+            else
+            {
+                Console.WriteLine($"Введите дату рождения {i4}а");
+            }
+            Console.Write("день рождения - ");
+            int date41 = int.Parse(Console.ReadLine());
+            Console.Write("месяц рождения - ");
+            int date42 = int.Parse(Console.ReadLine());
+            Console.Write("год рождения - ");
+            int date43 = int.Parse(Console.ReadLine());
+            Console.Write("Имя пятого учасника - ");
+            string i5 = Console.ReadLine();
+            k1 = i5.Length;
+            d = 0;
+            i11 = "";
+            while (d < k1 - 1)
+            {
+                c1 = i5[d].ToString();
+                i11 = i11 + "" + c1;
+                d += 1;
+            }
+            i11 = i11 + "" + "я";
+            if (i5[k1 - 1] == 'й')
+            {
+                Console.WriteLine($"Введите дату рождения {i11}");
+            }
+            else
+            {
+                Console.WriteLine($"Введите дату рождения {i5}а");
+            }
+            Console.Write("день рождения - ");
+            int date51 = int.Parse(Console.ReadLine());
+            Console.Write("месяц рождения - ");
+            int date52 = int.Parse(Console.ReadLine());
+            Console.Write("год рождения - ");
+            int date53 = int.Parse(Console.ReadLine());
+            int date1 = date13 * 365 + date12 * 30 + date11;
+            int date2 = date23 * 365 + date22 * 30 + date21;
+            int date3 = date33 * 365 + date32 * 30 + date31;
+            int date4 = date43 * 365 + date42 * 30 + date41;
+            int date5 = date53 * 365 + date52 * 30 + date51;
+            /////////////////
+            if (date1<=date2 && date1<=date3 && date1<=date4 && date1<=date5)
+            {
+                Console.WriteLine($"{i1} является самым старшим участником команды");
+            }
+            else if (date2 <= date1 && date2 <= date3 && date2 <= date4 && date2 <= date5)
+            {
+                Console.WriteLine($"{i2} является самым старшим участником команды");
+            }
+            else if (date3 <= date1 && date3 <= date2 && date3 <= date4 && date3 <= date5)
+            {
+                Console.WriteLine($"{i3} является самым старшим участником команды");
+            }
+            else if (date4 <= date1 && date4 <= date3 && date4 <= date2 && date4 <= date5)
+            {
+                Console.WriteLine($"{i4} является самым старшим участником команды");
+            }
+            else if (date5 <= date1 && date5 <= date3 && date5 <= date4 && date5 <= date2)
+            {
+                Console.WriteLine($"{i5} является самым старшим участником команды");
+            }
+            ////////////////
+            if (date1>=date2 && date1>=date3 && date1>=date4 && date1>=date5)
+            {
+                Console.WriteLine($"{i1} является самым младшим участником команды");
+            }
+            else if (date2 >= date1 && date2 >= date3 && date2 >= date4 && date2 >= date5)
+            {
+                Console.WriteLine($"{i2} является самым младшим участником команды");
+            }
+            else if (date3 >= date1 && date3 >= date2 && date3 >= date4 && date3 >= date5)
+            {
+                Console.WriteLine($"{i3} является самым младшим участником команды");
+            }
+            else if (date4 >= date1 && date4 >= date3 && date4 >= date2 && date4 >= date5)
+            {
+                Console.WriteLine($"{i4} является самым младшим участником команды");
+            }
+            else if (date5 >= date1 && date5 >= date3 && date5 >= date4 && date5 >= date2)
+            {
+                Console.WriteLine($"{i5} является самым младшим участником команды");
+            }
+
+        }
+    }
+}
